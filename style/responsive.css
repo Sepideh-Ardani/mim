@@ -1,0 +1,12 @@
+@media only screen and (max-width:1440px){
+    .hero .box__cards__card {
+      width: 45%;
+      height: 500px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .hero .box__cards__card {
+      width: 45%;
+      height: 500px;
+    }
+}

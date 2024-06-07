@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه ورود</title>
+    <link
+      rel="stylesheet"
+      href="../style/login.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../html/index.html">خانه</a>
+      <a href="#">ارتباط با ما</a>
+    </div>
+
+    <div id="main">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "350px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <div class="container">
+      <div class="login__form">
+        <div class="login__form__img">
+          <img src="../images/img/wood.jpg" alt="wood" />
+        </div>
+        <div class="login__form__right">
+          <h1>ورود</h1>
+          <form action="../style/login.css" method="post">
+            <label for="input-email"><h2>ایمیل</h2></label>
+            <input type="email" id="input-email" name="email" required />
+            <label for="input-pass"><h2>رمز عبور</h2></label>
+            <input type="password" id="input-pass" name="pass" required />
+            <button class="login-btn" name="login-btn"><h2>ورود</h2></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
